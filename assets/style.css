@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #e8e8ee;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: #341714;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .left-bar {
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-image: url("sidebar.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container form {
+    width: 50%;
+    height: auto;
+    position: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    padding: 50px 200px 0px 0px;
+
+}
+
+.container p { 
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgb(144, 21, 226);
+}
+
+a{
+    color: #fff;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+    color: #fff;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.input-group span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+
+.submit-error{
+    color: red;
+}
